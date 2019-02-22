@@ -22,6 +22,19 @@
     align-items: center;
 }
 
+#presentation button {
+    margin: 20px 0;
+}
+
+#presentation p {
+    margin: 10px 0;
+}
+
+.sub-section-header {
+    position: relative;
+    margin: 20px 0 20px 0;
+}
+
 /*
 Theme Name:
 Author: yaminncco
@@ -70,7 +83,7 @@ Table OF Contents
 
 body {
     font-family: 'Varela Round', sans-serif;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.6;
     overflow-x: hidden;
     color: #868F9B;

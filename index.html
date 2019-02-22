@@ -105,7 +105,7 @@
 					<!-- home content -->
 					<div class="col-md-10 col-md-offset-1">
 						<div class="home-content">
-							<h1 class="white-text">Imaginons ensemble la démocratie de demain</h1>
+							<h1 class="white-text">Créons ensemble la démocratie de demain</h1>
 							<button class="main-btn">S'inscrire au prochain Bureau</button>
 						</div>
 					</div>
@@ -128,18 +128,24 @@
 				<p>
 					Le Bureau Ouvert est une initiative ouverte à toutes et à tous.<br/>
 					C'est un projet citoyen, bénévole et apolitique qui vise à favoriser les initiatives de Civic Tech.<br/>
-					Il s'agit entre autres de proposer des outils permettant d’améliorer la communication entre les citoyens et les élus, mais également permettre des échanges pour améliorer le processus participatif, ou encore de favoriser la visualisation et l’analyse de données liées à la citoyenneté et la loi.
+					Il s'agit entre autre de proposer des outils permettant d’améliorer l'interaction entre les citoyens et les élus, mais également permettre des échanges pour améliorer le processus participatif, ou encore de favoriser la visualisation et l’analyse de données liées à la citoyenneté et la loi.
 				</p>
-				<button class="outline-btn">Voir les projets</button>
+				<p>
+					Le Bureau Ouvert est transpartisant et accueille toutes les personnes souhaitant s'investir dans la transparence et la compréhension de l'activité parlementaire.
+				</p>
+				<a id='project-button' href='#projects'><button class="outline-btn">Voir les projets</button></a>
+
+				<div class="sub-section-header text-center">
+					<h3 class="title">Où et quand ?</h3>
+				</div>
+
 				<p>
 					Le Bureau Ouvert se réunit tous les vendredis, de 9h30 à 17h, à l’Assemblée Nationale,
 					au 128 rue de l'Université, 75007, Paris.<br/>
 					Il faut s'inscrire préalablement pour y participer.
 				</p>
+
 				<button class="main-btn">S'inscrire au prochain Bureau</button>
-				<p>
-					Le Bureau Ouvert est transpartisant et accueille toutes les personnes souhaitant s'investir dans la transparence et la compréhension de l'activité parlementaire.
-				</p>
 			</div>
 		</div>
 	</div>
@@ -165,7 +171,10 @@
 						<div class="about">
 							<i class="fa fa-rocket"></i>
 							<h3>S'investir dans un projet</h3>
-							<p>Plusieurs applications libres sont développées au Bureau Ouvert. Dev, UI, UX sont les bienvenu(e)s !</p>
+							<p>
+								Plusieurs applications libres sont développées au Bureau Ouvert.<br/>
+								Dévelppeuses et développeurs, UI et UX sont les bienvenus !
+							</p>
 							<a href="#">Voir plus</a>
 						</div>
 					</div>
@@ -214,9 +223,15 @@
 
 				<!-- Section header -->
 				<div class="section-header text-center">
-					<h2 class="title">Projets actifs dernièrement</h2>
+					<h2 class="title">Projets emblématiques</h2>
 				</div>
 				<!-- /Section header -->
+
+				<div class='row'>
+					<p class='text-center col-sm-12 col-md-8 col-md-offset-2'>
+						Afin de mieux cerner les comment s'investir au Bureau Ouvert, voici une liste non-exhaustive des initiatives d'applications soutenues par le Bureau Ouvert.
+					</p>
+				</div>
 
 				<div class="self-row" id="posts">
 
@@ -238,7 +253,7 @@
 						return day + ' ' + monthNames[monthIndex] + ' ' + year;
 					}
 
-					fetch("https://forum.parlement-ouvert.fr/c/bureau-ouvert/devs-bureau-ouvert.json?page=0", {"credentials":"omit","headers":{"accept":"*/*","accept-language":"en-GB,en-US;q=0.9,en;q=0.8,fr;q=0.7"},"referrer":"https://parlement-ouvert.fr/","referrerPolicy":"no-referrer-when-downgrade","body":null,"method":"GET","mode":"cors"})
+					fetch("https://forum.parlement-ouvert.fr/c/bureau-ouvert/projets-phares.json?page=0", {"credentials":"omit","headers":{"accept":"*/*","accept-language":"en-GB,en-US;q=0.9,en;q=0.8,fr;q=0.7"},"referrer":"https://parlement-ouvert.fr/","referrerPolicy":"no-referrer-when-downgrade","body":null,"method":"GET","mode":"cors"})
 						.then(function(response) {
 							return response.json();
 						})
